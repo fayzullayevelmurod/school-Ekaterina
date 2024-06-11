@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Bergamasco", sans-serif;
+  src: url("../fonts/bergamasco/Bergamasco-Semibold.ttf");
+}
+@font-face {
+  font-family: "Bergamasco", sans-serif;
+  src: url("../fonts/bergamasco/Bergamasco-Regular.ttf");
+}
+@font-face {
+  font-family: "Bergamasco", sans-serif;
+  src: url("../fonts/bergamasco/Bergamasco-Thin.ttf");
+}
+@font-face {
+  font-family: "NT Somic", sans-serif;
+  src: url("../fonts/NTSomic/NTSomic-Bold.ttf");
+}
+@font-face {
+  font-family: "NT Somic", sans-serif;
+  src: url("../fonts/NTSomic/NTSomic-Medium.ttf");
+}
+@font-face {
+  font-family: "NT Somic", sans-serif;
+  src: url("../fonts/NTSomic/NTSomic-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+span, label {
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "NT Somic", sans-serif;
+  font-style: normal;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  outline: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main_container {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 993px) {
+  .main_container {
+    max-width: calc(100% - 120px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main_container {
+    max-width: calc(100% - 60px);
+  }
+}/*# sourceMappingURL=style.css.map */

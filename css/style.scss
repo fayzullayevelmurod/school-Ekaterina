@@ -1,3 +1,38 @@
+// fonts
+@font-face {
+    font-family: 'Bergamasco',sans-serif;
+    src: url('../fonts/bergamasco/Bergamasco-Semibold.ttf');
+}
+
+@font-face {
+    font-family: 'Bergamasco',sans-serif;
+    src: url('../fonts/bergamasco/Bergamasco-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Bergamasco',sans-serif;
+    src: url('../fonts/bergamasco/Bergamasco-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'NT Somic',sans-serif;
+    src: url('../fonts/NTSomic/NTSomic-Bold.ttf');
+}
+@font-face {
+    font-family: 'NT Somic',sans-serif;
+    src: url('../fonts/NTSomic/NTSomic-Medium.ttf');
+}
+@font-face {
+    font-family: 'NT Somic',sans-serif;
+    src: url('../fonts/NTSomic/NTSomic-Regular.ttf');
+}
+// fonts
+
+// vars
+$font-NT-Somic: 'NT Somic', sans-serif; 
+$font-Bergamasco: 'Bergamasco', sans-serif; 
+// vars
+
 // mixin
 @mixin flex-full-center {
     display: flex;
@@ -56,7 +91,7 @@ html {
 }
 
 body {
-
+    font-family: $font-NT-Somic;
     font-style: normal;
 }
 
@@ -82,25 +117,8 @@ address {
 
 .main_container {
     max-width: 1380px;
-    padding: 0 10px;
     margin: 0 auto;
 }
 
-// bootstrap
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-label {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-// bootstrap
 
 @import './responsive';

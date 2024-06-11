@@ -1,3 +1,11 @@
 @media only screen and (max-width: 993px) {
-    
+    .main_container {
+        max-width: calc(100% - 120px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main_container {
+        max-width: calc(100% - 60px);
+    }
 }
