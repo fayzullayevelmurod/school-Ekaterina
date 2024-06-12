@@ -99,6 +99,7 @@ html {
 body {
     font-family: $font-NT-Somic;
     font-style: normal;
+    background: rgb(243, 235, 225);
 }
 
 input {
@@ -121,15 +122,110 @@ address {
     overflow: hidden;
 }
 
-.main_container {
-    max-width: 1380px;
-    margin: 0 auto;
+.main {
+    &_container {
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    &_title {
+        font-size: 60px;
+        font-weight: 400;
+        font-family: $font-Bergamasco;
+        text-align: center;
+    }
 }
 
+// faq
+.faq {
+    .main_title {
+        margin-bottom: 60px;
+    }
+
+    .accordion {
+        gap: 20px;
+
+        button {
+            position: relative;
+            text-align: left;
+            width: 100%;
+            padding: 30px;
+            color: #7288a2;
+            font-size: 1.15rem;
+            font-weight: 400;
+            border: none;
+            background: none;
+            outline: none;
+        }
+    
+        .accordion_item{
+            border-radius: 20px;
+            background: #F5F5F5;
+            box-sizing: border-box;
+            border: 1px solid rgb(76, 36, 10);
+            border-radius: 30px;
+            background: rgb(243, 235, 225);
+
+            button {
+                @include flex-center();
+                justify-content: space-between; 
+                gap: 30px; 
+            }
+
+            .icon {
+                text-align: right;
+                width: 130px;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 21.6px;
+                color: #4C240A80;
+                text-decoration: underline;
+            }
+        }
+    
+        button .accordion-title {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 31.44px;
+            color: #4C240A;
+        }
+    
+        button[aria-expanded='true'] .icon span {
+            display: none;
+        }
+
+        button[aria-expanded='true'] + .accordion-content {
+            opacity: 1;
+            max-height: 7em;
+            transition: all 200ms linear;
+            will-change: opacity, max-height;
+        }
+
+        .accordion-content {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 200ms linear, max-height 200ms linear;
+            will-change: opacity, max-height;
+
+            p {
+                padding: 0 30px 30px 30px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20.96px;        
+                color: #4C240A;      
+            }
+        }
+    }
+}
+// faq
 
 // reviews
 .reviews {
-    background: rgb(243, 235, 225);
+    padding: 60px 0 90px;
+    .main_title {
+        margin-bottom: 30px;
+    }
 
     .reviews_in {
         max-width: 920px;
@@ -166,6 +262,8 @@ address {
             line-height: 19.2px;
             color: #4C240A80;
             margin-bottom: 30px;
+
+            margin: 1 px solid rred;
         }
 
         p {
