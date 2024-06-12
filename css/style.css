@@ -83,6 +83,123 @@ address {
   margin: 0 auto;
 }
 
+.reviews {
+  background: rgb(243, 235, 225);
+}
+.reviews .reviews_in {
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reviews .reviews_in button {
+  min-width: 60px;
+}
+.reviews .reviewsSwiper {
+  padding: 30px;
+}
+.reviews_card {
+  padding: 30px;
+  border: 1px solid rgb(76, 36, 10);
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(76, 36, 10, 0.5);
+}
+.reviews_card h6 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #4C240A;
+  margin-bottom: 10px;
+}
+.reviews_card span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  color: rgba(76, 36, 10, 0.5019607843);
+  margin-bottom: 30px;
+}
+.reviews_card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  color: #4C240A;
+}
+
+.footer {
+  background: #4C240A;
+  padding: 120px 0;
+}
+.footer .main_container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer_left li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #F3EBE1;
+}
+.footer_right {
+  display: flex;
+  align-items: center;
+  gap: 110px;
+}
+.footer_right_content {
+  display: flex;
+  flex-direction: column;
+}
+.footer_right_content h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.58px;
+  letter-spacing: 0.03em;
+  color: #F3EBE1;
+  margin-bottom: 20px;
+}
+.footer_right_content h5 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #F3EBE1;
+  margin-bottom: 5px;
+}
+.footer_right_content a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.96px;
+  letter-spacing: 0.03em;
+  color: #F3EBE1;
+  margin-bottom: 30px;
+}
+.footer_right_content .footer_social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.footer_right_content .footer_social a {
+  margin-bottom: 0;
+}
+.footer_right_content span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.76px;
+  letter-spacing: 0.04em;
+  color: #F3EBE1;
+}
+.footer_right .top_btn {
+  width: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 993px) {
   .main_container {
     max-width: calc(100% - 120px);
