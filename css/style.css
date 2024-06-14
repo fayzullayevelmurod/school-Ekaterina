@@ -99,6 +99,9 @@ address {
   align-items: center;
   gap: 135px;
 }
+.teacher img {
+  max-width: 432px;
+}
 .teacher h4 {
   font-family: "Bergamasco", sans-serif;
   font-size: 60px;
@@ -106,6 +109,91 @@ address {
   line-height: 63.02px;
   color: #F3EBE1;
   margin-bottom: 60px;
+}
+.teacher h6 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.44px;
+  margin-bottom: 30px;
+  color: #F3EBE1;
+}
+.teacher ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 30px;
+}
+.teacher ul li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #F3EBE1;
+  position: relative;
+}
+.teacher ul li::after {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(243, 235, 225, 0.5019607843);
+}
+
+.education {
+  padding: 120px 0;
+}
+.education .main_title {
+  margin-bottom: 60px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47.16px;
+  color: #4C240A;
+}
+.education_cards {
+  display: flex;
+  gap: 30px;
+}
+.education_card {
+  width: 33.3333333333%;
+  padding: 30px;
+  border: 1px solid rgb(76, 36, 10);
+  border-radius: 175px 175px 0px 0px;
+}
+.education_card .education_card_top {
+  text-align: center;
+}
+.education_card .education_card_top h4 {
+  font-family: "Bergamasco", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 67.22px;
+  color: #4C240A;
+}
+.education_card .education_card_top h6 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26.2px;
+  color: #4C240A;
+}
+.education_card .education_card_top img {
+  width: 100%;
+  margin: 40px 0 20px 0;
+}
+.education_card .education_card_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.education_card .education_card_bottom p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #4C240A;
 }
 
 .masters {

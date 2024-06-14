@@ -146,6 +146,10 @@ address {
         gap: 135px;
     }
 
+    img {
+        max-width: 432px;
+    }
+
     h4 {
         font-family: $font-Bergamasco;
         font-size: 60px;
@@ -154,8 +158,108 @@ address {
         color: #F3EBE1;
         margin-bottom: 60px;
     }
+
+    h6 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 31.44px;
+        margin-bottom: 30px;
+        color: #F3EBE1;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 30px;
+        
+        li {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 23.4px;    
+            color: #F3EBE1;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                left: -30px;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+                content: '';
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                background: #F3EBE180;
+            }
+        }
+    }
 }
 // teacher
+
+// education
+.education {
+    padding: 120px 0;
+
+    .main_title {
+        margin-bottom: 60px;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 47.16px;
+        color: #4C240A;
+    }
+
+    &_cards {
+        display: flex;
+        gap: 30px;
+    }
+
+    &_card {
+        width: calc(100% / 3);
+        padding: 30px;
+        border: 1px solid rgb(76, 36, 10);
+        border-radius: 175px 175px 0px 0px;    
+        
+        .education_card_top {
+            text-align: center;
+
+            h4 {
+                font-family: $font-Bergamasco;
+                font-size: 64px;
+                font-weight: 400;
+                line-height: 67.22px;
+                color: #4C240A;
+            }
+
+            h6 {
+                margin-top: 15px;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 26.2px;
+                color: #4C240A;
+            }
+
+            img {
+                width: 100%;
+                margin: 40px 0 20px 0;
+            }
+        }
+
+        .education_card_bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 23.4px;
+                color: #4C240A;
+            }
+        }
+    }
+}
+// education
 
 // masters
 .masters {
