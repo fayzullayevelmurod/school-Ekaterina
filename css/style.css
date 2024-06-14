@@ -166,6 +166,9 @@ address {
   display: flex;
   gap: 30px;
 }
+.education .two_card .education_card {
+  display: none;
+}
 .education_card {
   width: 33.3333333333%;
   padding: 30px;
@@ -489,6 +492,12 @@ address {
   }
   .education .one_card {
     box-shadow: none;
+  }
+  .education .three_card {
+    display: none;
+  }
+  .education .two_card .education_card {
+    display: block;
   }
   .education .three_card {
     box-shadow: 0px 0px 30px 0px rgba(76, 36, 10, 0.5);

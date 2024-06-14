@@ -53,6 +53,16 @@
         }
 
         .three_card {
+            display: none;
+        }
+
+        .two_card {
+            .education_card {
+                display: block;
+            }
+        }
+
+        .three_card {
             box-shadow: 0px 0px 30px 0px rgba(76, 36, 10, 0.5);
         }
 

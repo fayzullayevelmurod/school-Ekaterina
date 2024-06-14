@@ -225,6 +225,12 @@ address {
         gap: 30px;
     }
 
+    .two_card {
+        .education_card {
+            display: none;
+        }
+    }
+
     &_card {
         width: calc(100% / 3);
         padding: 30px;
