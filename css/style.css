@@ -90,6 +90,68 @@ address {
   text-align: center;
 }
 
+.teacher {
+  padding: 120px 0;
+  background: #4C240A;
+}
+.teacher .main_container {
+  display: flex;
+  align-items: center;
+  gap: 135px;
+}
+.teacher h4 {
+  font-family: "Bergamasco", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 63.02px;
+  color: #F3EBE1;
+  margin-bottom: 60px;
+}
+
+.masters {
+  padding: 120px 0;
+  background: #4C240A;
+}
+.masters .main_title {
+  margin-bottom: 60px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 60px;
+  color: #F3EBE1;
+}
+.masters_cards {
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+.masters_card {
+  width: 50%;
+  padding: 30px;
+  border-radius: 221px 221px 30px 30px;
+  background: rgba(243, 235, 225, 0.1019607843);
+}
+.masters_card img {
+  width: 100%;
+}
+.masters_card h6 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.44px;
+  margin: 30px 0 10px 0;
+  color: #F3EBE1;
+}
+.masters_card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color: #F3EBE1;
+}
+
+.faq {
+  padding: 120px 0 60px 0;
+}
 .faq .main_title {
   margin-bottom: 60px;
 }

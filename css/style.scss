@@ -136,8 +136,79 @@ address {
     }
 }
 
+// teacher
+.teacher {
+    padding: 120px 0;
+    background: #4C240A;
+
+    .main_container {
+        @include flex-center();
+        gap: 135px;
+    }
+
+    h4 {
+        font-family: $font-Bergamasco;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 63.02px; 
+        color: #F3EBE1;
+        margin-bottom: 60px;
+    }
+}
+// teacher
+
+// masters
+.masters {
+    padding: 120px 0;
+    background: #4C240A;
+
+    .main_title {
+        margin-bottom: 60px;
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 60px;  
+        color: #F3EBE1;
+    }
+
+    &_cards {
+        max-width: 920px;
+        margin: 0 auto;
+        @include flex-start();
+        gap: 30px;
+        }
+
+    &_card {
+        width: calc(100% / 2);
+        padding: 30px;
+        border-radius: 221px 221px 30px 30px;
+        background: #F3EBE11A;
+
+        img {
+            width: 100%;
+        }
+
+        h6 {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 31.44px;
+            margin: 30px 0 10px 0;
+            color: #F3EBE1;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20.8px;
+            color: #F3EBE1;
+        }
+    }
+}
+// masters
+
 // faq
 .faq {
+    padding: 120px 0 60px 0;
+
     .main_title {
         margin-bottom: 60px;
     }
