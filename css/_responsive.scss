@@ -59,8 +59,319 @@
 }
 
 @media only screen and (max-width: 993px) {
+
     .main_container {
         max-width: calc(100% - 120px);
+    }
+
+    .teacher {
+        .main_container {
+            gap: 55px;
+        }
+    }
+
+    .education {
+        .education_card {
+            border: none;
+            box-shadow: 0px 0px 30px 0px rgba(76, 36, 10, 0.5);
+        }
+    }
+
+    .footer {
+
+        .main_container {
+            gap: 10px;
+        }
+
+        ul {
+            max-width: 386px;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .education {
+        padding: 60px 0;
+
+        .education_cards {
+            flex-direction: column;
+            gap: 0;
+            border-radius: 175px 175px 0px 0px;
+            box-shadow: 0px 0px 30px 0px rgba(76, 36, 10, 0.5);
+            border-radius: 175px 175px 0px 0px;
+        }
+
+        .main_title {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+
+        .one_card {
+            box-shadow: none;
+        }
+
+        .three_card {
+            display: none;
+        }
+
+        .two_card {
+            .education_card {
+                display: block;
+            }
+        }
+
+        .three_card {
+            box-shadow: 0px 0px 30px 0px rgba(76, 36, 10, 0.5);
+        }
+
+        .education_card {
+            padding: 0;
+            width: 100%;
+
+            .education_card_bottom {
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .education_card_in {
+            padding: 20px 20px 35px 20px;
+        }
+
+        
+    }
+
+    .teacher {
+        padding: 60px 0;
+
+        .main_container {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .teacher_img {
+            
+            img {
+                max-width: 100%;
+            }
+
+            h4 {
+                display: flex;
+                margin-bottom: 0;
+            }
+        }
+
+        .teacher_text {
+            h4 {
+                display: none;
+            }
+        }
+
+        h6 {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            gap: 10px;
+
+            li {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .masters {
+        padding: 60px 0;
+
+        .main_title {
+            margin-bottom: 30px;
+        }
+
+        .masters_cards {
+            display: none;
+        }
+
+        .mastersSwiper {
+            padding: 20px 0;
+            display: block;
+
+            .masters_card {
+                padding: 20px;
+                width: 100%;
+                border-radius: 221px 221px 30px 30px;
+
+                h6 {
+                    margin: 30px 0 10px 0;
+                    line-height: 20px;
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+
+            .swiper-pagination {
+                margin-top: 20px;
+                position: static;
+                @include flex-full-center;
+                gap: 23px;
+
+                .swiper-pagination-bullet {
+                    background: #793B16;
+                    margin: 0;
+                    width: 10px;
+                    height: 10px;
+                }
+
+                .swiper-pagination-bullet-active {
+                    background: #F3EBE1;
+                }
+            }
+        }
+    }
+
+    .faq {
+        padding: 60px 0;
+        
+        .accordion {
+            button {
+                padding: 20px;
+
+                .accordion-title {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+
+            .accordion_item {
+                .icon {
+                    span {
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                }
+            }
+
+            .accordion-content {
+
+                p {
+                    padding: 0 20px 20px 20px;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+
+            button[aria-expanded=true] + .accordion-content {
+                max-height: 9em;
+            }
+
+        }
+    } 
+
+    .reviews {
+        padding: 0 0 60px 0;
+
+        .reviewsSwiper {
+            padding: 15px;
+        }
+
+        .reviews_card {
+            padding: 20px;
+            box-shadow: 0px 0px 15px 0px rgba(76, 36, 10, 0.5);
+
+            h6 {
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            span {
+                font-size: 14px;
+                line-height: 16px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+
+        .reviews_in {
+            button {
+                min-width: 30px;
+
+                .prev_icon_media, .next_icon_media {
+                    display: flex;
+                }
+
+
+                .prev_icon, .next_icon {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding: 80px 0;
+
+        .main_container {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        ul {
+            max-width: 100%;
+        }
+
+        .footer_logo {
+            max-width: 237px;
+        }
+
+        .footer_left {
+            gap: 15px;
+
+            li {
+                font-size: 10px;
+                line-height: 13px;
+            }
+        }
+
+        h6, h5, a {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        h6 {
+            margin-bottom: 15px;
+        }
+
+        span {
+            font-size: 10px;
+            line-height: 13px;
+        }
+
+        .footer_right {
+            justify-content: space-between;
+            gap: 10px;
+
+            .top_btn {
+                width: 19px;
+                height: 24px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
