@@ -94,7 +94,9 @@ address {
   margin-bottom: 60px;
 }
 .faq .accordion {
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .faq .accordion button {
   position: relative;
@@ -125,6 +127,8 @@ address {
 .faq .accordion .accordion_item .icon {
   text-align: right;
   width: 130px;
+}
+.faq .accordion .accordion_item .icon span {
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
