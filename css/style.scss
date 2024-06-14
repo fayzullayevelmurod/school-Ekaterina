@@ -146,6 +146,17 @@ address {
         gap: 135px;
     }
 
+    .teacher_img {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+
+        h4 {
+            display: none;
+        }
+    }
+
     img {
         max-width: 432px;
     }
@@ -274,6 +285,10 @@ address {
         color: #F3EBE1;
     }
 
+    .mastersSwiper {
+        display: none;
+    }
+
     &_cards {
         max-width: 920px;
         margin: 0 auto;
@@ -289,6 +304,7 @@ address {
 
         img {
             width: 100%;
+            border-radius: 180px 180px 0px 0px;
         }
 
         h6 {
@@ -336,7 +352,6 @@ address {
         }
     
         .accordion_item{
-            border-radius: 20px;
             background: #F5F5F5;
             box-sizing: border-box;
             border: 1px solid rgb(76, 36, 10);
@@ -413,6 +428,14 @@ address {
 
         button {
             min-width: 60px;
+
+            .prev_icon_media {
+                display: none;
+            }
+        
+            .next_icon_media {
+                display: none;
+            }
         }
     }
 
@@ -441,8 +464,6 @@ address {
             line-height: 19.2px;
             color: #4C240A80;
             margin-bottom: 30px;
-
-            margin: 1 px solid rred;
         }
 
         p {

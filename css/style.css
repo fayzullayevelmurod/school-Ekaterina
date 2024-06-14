@@ -99,6 +99,15 @@ address {
   align-items: center;
   gap: 135px;
 }
+.teacher .teacher_img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.teacher .teacher_img h4 {
+  display: none;
+}
 .teacher img {
   max-width: 432px;
 }
@@ -207,6 +216,9 @@ address {
   line-height: 60px;
   color: #F3EBE1;
 }
+.masters .mastersSwiper {
+  display: none;
+}
 .masters_cards {
   max-width: 920px;
   margin: 0 auto;
@@ -222,6 +234,7 @@ address {
 }
 .masters_card img {
   width: 100%;
+  border-radius: 180px 180px 0px 0px;
 }
 .masters_card h6 {
   font-size: 24px;
@@ -261,7 +274,6 @@ address {
   outline: none;
 }
 .faq .accordion .accordion_item {
-  border-radius: 20px;
   background: #F5F5F5;
   box-sizing: border-box;
   border: 1px solid rgb(76, 36, 10);
@@ -331,6 +343,12 @@ address {
 .reviews .reviews_in button {
   min-width: 60px;
 }
+.reviews .reviews_in button .prev_icon_media {
+  display: none;
+}
+.reviews .reviews_in button .next_icon_media {
+  display: none;
+}
 .reviews .reviewsSwiper {
   padding: 30px;
 }
@@ -353,7 +371,6 @@ address {
   line-height: 19.2px;
   color: rgba(76, 36, 10, 0.5019607843);
   margin-bottom: 30px;
-  margin: 1 px solid rred;
 }
 .reviews_card p {
   font-size: 16px;
@@ -440,6 +457,9 @@ address {
   .main_container {
     max-width: calc(100% - 120px);
   }
+  .teacher .main_container {
+    gap: 55px;
+  }
   .footer .main_container {
     gap: 10px;
   }
@@ -447,7 +467,128 @@ address {
     max-width: 386px;
   }
 }
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 850px) {
+  .teacher {
+    padding: 60px 0;
+  }
+  .teacher .main_container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .teacher .teacher_img img {
+    max-width: 100%;
+  }
+  .teacher .teacher_img h4 {
+    display: flex;
+    margin-bottom: 0;
+  }
+  .teacher .teacher_text h4 {
+    display: none;
+  }
+  .teacher h6 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .teacher ul {
+    gap: 10px;
+  }
+  .teacher ul li {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .masters .masters_cards {
+    display: none;
+  }
+  .masters .mastersSwiper {
+    padding: 20px 0;
+    display: block;
+  }
+  .masters .mastersSwiper .masters_card {
+    padding: 20px;
+    width: 100%;
+    border-radius: 221px 221px 30px 30px;
+  }
+  .masters .mastersSwiper .masters_card h6 {
+    margin: 30px 0 10px 0;
+    line-height: 20px;
+    font-size: 16px;
+  }
+  .masters .mastersSwiper .masters_card p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .masters .mastersSwiper .swiper-pagination {
+    margin-top: 20px;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+  }
+  .masters .mastersSwiper .swiper-pagination .swiper-pagination-bullet {
+    background: #793B16;
+    margin: 0;
+    width: 10px;
+    height: 10px;
+  }
+  .masters .mastersSwiper .swiper-pagination .swiper-pagination-bullet-active {
+    background: #F3EBE1;
+  }
+  .faq {
+    padding: 60px 0;
+  }
+  .faq .accordion button {
+    padding: 20px;
+  }
+  .faq .accordion button .accordion-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .faq .accordion .accordion_item .icon span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .faq .accordion .accordion-content p {
+    padding: 0 20px 20px 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .faq .accordion button[aria-expanded=true] + .accordion-content {
+    max-height: 9em;
+  }
+  .reviews {
+    padding: 0 0 60px 0;
+  }
+  .reviews .reviewsSwiper {
+    padding: 15px;
+  }
+  .reviews .reviews_card {
+    padding: 20px;
+    box-shadow: 0px 0px 15px 0px rgba(76, 36, 10, 0.5);
+  }
+  .reviews .reviews_card h6 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .reviews .reviews_card span {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+  .reviews .reviews_card p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .reviews .reviews_in button {
+    min-width: 30px;
+  }
+  .reviews .reviews_in button .prev_icon_media, .reviews .reviews_in button .next_icon_media {
+    display: flex;
+  }
+  .reviews .reviews_in button .prev_icon, .reviews .reviews_in button .next_icon {
+    display: none;
+  }
   .footer {
     padding: 80px 0;
   }

@@ -22,6 +22,14 @@ let swiper = new Swiper(".reviewsSwiper", {
     // },
 });
 
+let swiper2 = new Swiper(".mastersSwiper", {
+    loop: true,
+    spaceBetween: 50,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
+
 
 // accardion
 const items = document.querySelectorAll('.accordion button');
