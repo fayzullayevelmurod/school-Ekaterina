@@ -10,6 +10,13 @@
         }
     }
 
+    .education {
+        .education_card {
+            border: none;
+            box-shadow: 0px 0px 30px 0px rgba(76, 36, 10, 0.5);
+        }
+    }
+
     .footer {
 
         .main_container {
@@ -23,6 +30,50 @@
 }
 
 @media only screen and (max-width: 850px) {
+
+    .education {
+        padding: 60px 0;
+
+        .education_cards {
+            flex-direction: column;
+            gap: 0;
+            border-radius: 175px 175px 0px 0px;
+            box-shadow: 0px 0px 30px 0px rgba(76, 36, 10, 0.5);
+            border-radius: 175px 175px 0px 0px;
+        }
+
+        .main_title {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+
+        .one_card {
+            box-shadow: none;
+        }
+
+        .three_card {
+            box-shadow: 0px 0px 30px 0px rgba(76, 36, 10, 0.5);
+        }
+
+        .education_card {
+            padding: 0;
+            width: 100%;
+
+            .education_card_bottom {
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .education_card_in {
+            padding: 20px 20px 35px 20px;
+        }
+
+        
+    }
 
     .teacher {
         padding: 60px 0;
@@ -67,6 +118,12 @@
     }
 
     .masters {
+        padding: 60px 0;
+
+        .main_title {
+            margin-bottom: 30px;
+        }
+
         .masters_cards {
             display: none;
         }

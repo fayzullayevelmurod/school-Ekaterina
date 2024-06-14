@@ -460,6 +460,10 @@ address {
   .teacher .main_container {
     gap: 55px;
   }
+  .education .education_card {
+    border: none;
+    box-shadow: 0px 0px 30px 0px rgba(76, 36, 10, 0.5);
+  }
   .footer .main_container {
     gap: 10px;
   }
@@ -468,6 +472,38 @@ address {
   }
 }
 @media only screen and (max-width: 850px) {
+  .education {
+    padding: 60px 0;
+  }
+  .education .education_cards {
+    flex-direction: column;
+    gap: 0;
+    border-radius: 175px 175px 0px 0px;
+    box-shadow: 0px 0px 30px 0px rgba(76, 36, 10, 0.5);
+    border-radius: 175px 175px 0px 0px;
+  }
+  .education .main_title {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  .education .one_card {
+    box-shadow: none;
+  }
+  .education .three_card {
+    box-shadow: 0px 0px 30px 0px rgba(76, 36, 10, 0.5);
+  }
+  .education .education_card {
+    padding: 0;
+    width: 100%;
+  }
+  .education .education_card .education_card_bottom p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .education .education_card_in {
+    padding: 20px 20px 35px 20px;
+  }
   .teacher {
     padding: 60px 0;
   }
@@ -496,6 +532,12 @@ address {
   .teacher ul li {
     font-size: 14px;
     line-height: 18px;
+  }
+  .masters {
+    padding: 60px 0;
+  }
+  .masters .main_title {
+    margin-bottom: 30px;
   }
   .masters .masters_cards {
     display: none;
