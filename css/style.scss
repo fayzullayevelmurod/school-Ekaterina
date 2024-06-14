@@ -151,6 +151,7 @@ address {
         padding: 0 30px;
         font-size: 18px;
         font-weight: 500;
+        text-align: center;
     }
 }
 
@@ -336,6 +337,10 @@ address {
         height: 100%;
         object-fit: cover;
         z-index: -1;
+
+        &.sm {
+            display: none;
+        }
     }
 
     &__subtitle {
@@ -606,6 +611,30 @@ address {
                         opacity: 0.5;
                         height: 1px;
                         position: relative;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            width: 5px;
+                            height: 5px;
+                            background: #4C240A;
+                            transform: translate(-50%, -50%);
+                            border-radius: 50%;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            width: 5px;
+                            height: 5px;
+                            background: #4C240A;
+                            transform: translate(50%, -50%);
+                            border-radius: 50%;
+                        }
                     }
 
                     &__in {
@@ -826,77 +855,5 @@ address {
     }
 }
 // Tarif end
-
-// Teacher
-.teacher {
-    background: #4C240A;
-    color: #F3EBE1;
-    padding: 120px 0;
-
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .img {
-        width: 432px;
-        flex-shrink: 0;
-        position: relative;
-
-        .icon {
-            width: 100%;
-        }
-
-        img:not(.icon) {
-            position: absolute;
-            left: 49px;
-            bottom: 45px;
-            width: calc(100% - 98px);
-            border-radius: 200px 200px 0 0;
-            box-shadow: 0 0 20px rgba(243, 235, 225, 0.4);
-        }
-    }
-
-    .text {
-        width: 543px;
-    }
-
-    &__title {
-        text-align: left;
-    }
-
-    &__subtitle {
-        margin: 60px 0 30px;
-        font-size: 24px;
-        font-weight: 500;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        li {
-            padding-left: 41px;
-            position: relative;
-            font-size: 18px;
-            line-height: 130%;
-
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 11px;
-                height: 11px;
-                border-radius: 50%;
-                background: #F3EBE1;
-            }
-        }
-    }
-}
-// Teacher end
 
 @import './responsive';
