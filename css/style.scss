@@ -1387,6 +1387,80 @@ address {
 }
 // step_form
 
+// step_blocks
+.step_blocks {
+
+    .main_container_two {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .step_block {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 125px;
+
+        .mini_form {
+            .form_input {
+                width: 190px;
+            }
+        }
+
+        .step_block_form {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        .step_block_text {
+            max-width: 570px;
+        }
+
+        h6 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 31.44px;
+            color: #4C240A;
+            @include flex-center();
+            gap: 10px;
+
+            .square {
+                width: 17px;
+                height: 17px;
+                outline: 1px solid #4C240A;
+            }
+        }
+
+        h6.active {
+            .square {
+                background: #4C240A;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 23.4px;
+            color: #4C240A;
+
+            span {
+                color: #4C240A80;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14.4px;
+                display: block;
+            }
+        }
+    }
+}
+// step_blocks
+
 // footer
 .footer {
     background: #4C240A;

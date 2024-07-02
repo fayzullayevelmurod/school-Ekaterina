@@ -138,6 +138,15 @@
             </section>
             <!-- steps -->
 
+            <!-- back_btn -->
+            <div class="main_container_two">
+                <a href="#" class="back_btn">
+                    <img src="./images/icons/back_btn.svg" alt="">
+                    Вернуться назад
+                </a>
+            </div>
+            <!-- back_btn -->
+
             <!-- step_line -->
             <div class="main_container_two step_line_wrapper">
                 <div class="one_circle circle"></div>
@@ -146,36 +155,148 @@
             </div>
             <!-- step_line -->
 
-            <!-- step_form -->
-            <div class="step_form">
+            <!-- step_block -->
+            <section class="step_blocks">
                 <div class="main_container_two">
-                    <div class="step_text">
-                        <p>
-                            Введите ваше имя, дату рождения, укажите контакты для связи с вами и выберите тему, на которую вы бы хотели получить консультацию.
-                        </p>
-                    </div>
-                    <form action="#" class="main_form">
-                        <input class="form_input" type="text" placeholder="Имя">
-                        <input type="text" class="form_input" placeholder="Дата рождения">
-                        <input type="text" class="form_input" placeholder="Контакты (Telegram)">
-                        <div class="mini_form">
+                    <div class="step_block">
+                        <div class="step_block_text">
+                            <h6>
+                                <div class="square"></div>
+                                Родители
+                            </h6>
                             <p>
-                                Выберите тему:
+                                Введите имена ваших родителей, их дату рождения, и обозначьте основную проблему.
                             </p>
-                            <div class="mini_form_in">
-                                <input type="text" placeholder="Родители" class="form_input">
-                                <input type="text" placeholder="Любовь" class="form_input">
-                                <input type="text" placeholder="Дети" class="form_input">
-                                <input type="text" placeholder="Карьера" class="form_input">
-                            </div>
                         </div>
-                        <button class="btn_brown form_btn" type="submit">
-                            Готово
-                        </button>
-                    </form>
+                        <div class="step_block_form">
+                            <form class="main_form" action="#">
+                                <div class="mini_form step_block_form">
+                                    <p>
+                                        Мама
+                                    </p>
+                                    <input type="text" placeholder="Имя" class="form_input">
+                                    <input type="text" placeholder="Дата рождения" class="form_input">
+                                </div>
+                                <div class="mini_form step_block_form">
+                                    <p>
+                                        Папа
+                                    </p>
+                                    <input type="text" placeholder="Имя" class="form_input">
+                                    <input type="text" placeholder="Дата рождения" class="form_input">
+                                </div>
+                                <input type="text" placeholder="Обозначьте основную проблему" class="form_input">
+                                <button class="btn_brown form_btn" type="submit">
+                                    Готово
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="step_block">
+                        <div class="step_block_text">
+                            <h6>
+                                <div class="square"></div>
+                                Любовь
+                            </h6>
+                            <p>
+                                Если Вы одиноки, нажмите на кнопку “в поиске”. Если Вы в отношениях, введите имя и дату рождения партнера/партнеров (если их двое), и обозначьте основную проблему.
+                            </p>
+                        </div>
+                        <div class="step_block_form">
+                            <form class="main_form" action="#">
+                                <input type="text" class="form_input" placeholder="В поиске">
+                                <div class="mini_form step_block_form">
+                                    <p>
+                                        Партнер 1
+                                    </p>
+                                    <input type="text" placeholder="Имя" class="form_input">
+                                    <input type="text" placeholder="Дата рождения" class="form_input">
+                                </div>
+                                <div class="mini_form step_block_form">
+                                    <p>
+                                        Партнер 2<br>
+                                        <span>
+                                            (если есть)
+                                        </span>
+                                    </p>
+                                    <input type="text" placeholder="Имя" class="form_input">
+                                    <input type="text" placeholder="Дата рождения" class="form_input">
+                                </div>
+                                <input type="text" placeholder="Обозначьте основную проблему" class="form_input">
+                                <button class="btn_brown form_btn" type="submit">
+                                    Готово
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="step_block">
+                        <div class="step_block_text">
+                            <h6>
+                                <div class="square"></div>
+                                Дети
+                            </h6>
+                            <p>
+                                Введите имя вашего ребенка, его дату рождения,
+                                и обозначьте основную проблему.
+                            </p>
+                        </div>
+                        <div class="step_block_form">
+                            <form class="main_form" action="#">
+                                <div class="mini_form step_block_form">
+                                    <p>
+                                        Ребёнок 1
+                                    </p>
+                                    <input type="text" placeholder="Имя" class="form_input">
+                                    <input type="text" placeholder="Дата рождения" class="form_input">
+                                </div>
+                                <div class="mini_form step_block_form">
+                                    <p>
+                                        Ребёнок 2<br>
+                                        <span>
+                                            (если есть)
+                                        </span>
+                                    </p>
+                                    <input type="text" placeholder="Имя" class="form_input">
+                                    <input type="text" placeholder="Дата рождения" class="form_input">
+                                </div>
+                                <div class="mini_form step_block_form">
+                                    <p>
+                                        Ребёнок 3<br>
+                                        <span>
+                                            (если есть)
+                                        </span>
+                                    </p>
+                                    <input type="text" placeholder="Имя" class="form_input">
+                                    <input type="text" placeholder="Дата рождения" class="form_input">
+                                </div>
+                                <input type="text" placeholder="Обозначьте основную проблему" class="form_input">
+                                <button class="btn_brown form_btn" type="submit">
+                                    Готово
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="step_block">
+                        <div class="step_block_text">
+                            <h6>
+                                <div class="square"></div>
+                                Карьера
+                            </h6>
+                            <p>
+                                Обозначьте главную карьерную проблему.
+                            </p>
+                        </div>
+                        <div class="step_block_form">
+                            <form class="main_form" action="#">
+                                <input type="text" placeholder="Обозначьте основную проблему" class="form_input">
+                                <button class="btn_brown form_btn" type="submit">
+                                    Готово
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- step_form -->
+            </section>
+            <!-- step_block -->
             
         </main>
         <!-- main -->
