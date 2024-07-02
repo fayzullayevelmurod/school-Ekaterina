@@ -1090,6 +1090,14 @@ address {
 .mini_form p {
   margin-bottom: 15px;
 }
+.mini_form .mini_form_two {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.mini_form .mini_form_two .form_input {
+  width: calc(50% - 5px);
+}
 .mini_form .mini_form_in {
   display: flex;
   flex-wrap: wrap;

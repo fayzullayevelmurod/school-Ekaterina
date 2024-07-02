@@ -1339,6 +1339,15 @@ address {
         margin-bottom: 15px;
     }
 
+    .mini_form_two {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .form_input {
+            width: calc(100% / 2 - 5px);
+        }
+    }
+
     .mini_form_in {
         display: flex;
         flex-wrap: wrap;
