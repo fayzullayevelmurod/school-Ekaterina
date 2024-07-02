@@ -1104,6 +1104,11 @@ address {
   height: 43px;
 }
 
+.form_btn.active {
+  color: #F3EBE1;
+  background: #4C240A;
+}
+
 .form_btn_active {
   color: #F3EBE1;
   background: #4C240A;
