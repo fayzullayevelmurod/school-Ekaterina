@@ -1375,6 +1375,16 @@ address {
         color: #4C240A80;
     }
 }
+
+.back_btn {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+    color: #4C240A;
+    @include flex-center();
+    gap: 15px;
+    margin-bottom: 40px;
+}
 // step_form
 
 // footer

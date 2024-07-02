@@ -1127,6 +1127,17 @@ address {
   color: rgba(76, 36, 10, 0.5019607843);
 }
 
+.back_btn {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #4C240A;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
 .footer {
   background: #4C240A;
   padding: 120px 0;
@@ -1697,6 +1708,9 @@ address {
     margin: 30px 0;
   }
   .step_line_wrapper {
+    margin-bottom: 30px;
+  }
+  .back_btn {
     margin-bottom: 30px;
   }
   .footer {
