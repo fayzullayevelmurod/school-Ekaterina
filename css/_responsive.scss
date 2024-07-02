@@ -668,6 +668,14 @@
             flex-direction: column;
             gap: 30px;
         }
+
+        .step_text {
+            gap: 10px;
+        }
+
+        .back_link {
+            width: 100%;
+        }
     }
 
     .steps {
@@ -767,6 +775,11 @@
         }
     }
 
+    .form_btn {
+        font-size: 14px;
+        height: 40px;
+    }
+
     .step_line_wrapper {
         max-width: 100%;
         transform: scale(1.01);
@@ -781,7 +794,7 @@
         .main_container_two {
             gap: 20px;
         }
-        
+
         p {
             font-size: 14px;
             line-height: 18.2px;

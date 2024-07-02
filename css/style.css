@@ -1050,6 +1050,20 @@ address {
   justify-content: space-between;
   gap: 120px;
 }
+.step_form .back_link {
+  width: 690px;
+}
+.step_form .step_text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.step_form h6 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.44px;
+  color: #4C240A;
+}
 .step_form p {
   font-size: 18px;
   font-weight: 400;
@@ -1673,6 +1687,12 @@ address {
     flex-direction: column;
     gap: 30px;
   }
+  .step_form .step_text {
+    gap: 10px;
+  }
+  .step_form .back_link {
+    width: 100%;
+  }
   .steps {
     margin: 30px 0;
   }
@@ -1746,6 +1766,10 @@ address {
   .steps .main_container_two a span {
     font-size: 14px;
     line-height: 18.2px;
+  }
+  .form_btn {
+    font-size: 14px;
+    height: 40px;
   }
   .step_line_wrapper {
     max-width: 100%;

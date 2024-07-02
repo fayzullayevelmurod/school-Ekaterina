@@ -1292,6 +1292,23 @@ address {
         gap: 120px;
     }
 
+    .back_link {
+        width: 690px;
+    }
+
+    .step_text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    h6 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 31.44px;
+        color: #4C240A;
+    }
+
     p {
         font-size: 18px;
         font-weight: 400;
