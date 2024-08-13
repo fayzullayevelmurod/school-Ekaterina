@@ -31,8 +31,8 @@
 // fonts
 
 // vars
-$font-NT-Somic: 'NT Somic', sans-serif; 
-$font-Bergamasco: 'Bergamasco', sans-serif; 
+$font-NT-Somic: 'NT Somic', sans-serif;
+$font-Bergamasco: 'Bergamasco', sans-serif;
 // vars
 
 // mixin
@@ -146,7 +146,7 @@ address {
     &_brown {
         border: 1px solid #4C240A;
         border-radius: 30px;
-        height: 51px; 
+        height: 51px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -172,7 +172,7 @@ address {
         align-items: center;
         gap: 30px;
     }
-} 
+}
 
 .form_header {
     border-bottom: 1px solid #4C240A;
@@ -188,7 +188,7 @@ address {
     width: 100%;
     height: 100%;
     display: none;
-    
+
     &__bg {
         position: absolute;
         top: 0;
@@ -236,7 +236,7 @@ address {
         display: flex;
         flex-direction: column;
         gap: 15px;
-        
+
         a {
             font-size: 18px;
             line-height: 120%;
@@ -298,7 +298,7 @@ address {
                 from {
                     opacity: 1;
                 }
-                
+
                 to {
                     opacity: 0;
                 }
@@ -313,7 +313,7 @@ address {
                 from {
                     transform: translateX(0);
                 }
-                
+
                 to {
                     transform: translateX(100%);
                 }
@@ -334,7 +334,7 @@ address {
     z-index: 1;
     padding: 204px 0 232px;
     color: #F3EBE1;
-    
+
     &__bg {
         position: absolute;
         top: 0;
@@ -382,7 +382,7 @@ address {
         font-weight: 500;
         text-align: center;
         margin-bottom: 40px;
-        
+
         span:not(.line) {
             padding: 30px 0 20px;
         }
@@ -405,7 +405,7 @@ address {
                 border-radius: 50%;
                 transform: translateY(-50%);
             }
-            
+
             &::after {
                 content: "";
                 position: absolute;
@@ -445,7 +445,7 @@ address {
             li {
                 font-size: 18px;
                 line-height: 130%;
-                
+
                 span {
                     font-weight: 700;
                 }
@@ -655,7 +655,7 @@ address {
                         display: flex;
                         flex-direction: column;
                         gap: 15px;
-                        
+
                         ul {
                             width: 100%;
                             gap: 10px;
@@ -839,7 +839,7 @@ address {
             p {
                 opacity: 0.5;
                 font-size: 16px;
-                
+
                 &:last-child {
                     margin-top: 30px;
                 }
@@ -891,7 +891,7 @@ address {
         font-family: $font-Bergamasco;
         font-size: 60px;
         font-weight: 400;
-        line-height: 63.02px; 
+        line-height: 63.02px;
         color: #F3EBE1;
         margin-bottom: 60px;
     }
@@ -909,11 +909,11 @@ address {
         flex-direction: column;
         gap: 20px;
         padding-left: 30px;
-        
+
         li {
             font-size: 18px;
             font-weight: 400;
-            line-height: 23.4px;    
+            line-height: 23.4px;
             color: #F3EBE1;
             position: relative;
 
@@ -961,8 +961,8 @@ address {
         width: calc(100% / 3);
         padding: 30px;
         border: 1px solid rgb(76, 36, 10);
-        border-radius: 175px 175px 0px 0px;    
-        
+        border-radius: 175px 175px 0px 0px;
+
         .education_card_top {
             text-align: center;
 
@@ -1013,7 +1013,7 @@ address {
         margin-bottom: 60px;
         font-size: 55px;
         font-weight: 600;
-        line-height: 60px;  
+        line-height: 60px;
         color: #F3EBE1;
     }
 
@@ -1082,7 +1082,7 @@ address {
             background: none;
             outline: none;
         }
-    
+
         .accordion_item{
             background: #F5F5F5;
             box-sizing: border-box;
@@ -1092,8 +1092,8 @@ address {
 
             button {
                 @include flex-center();
-                justify-content: space-between; 
-                gap: 30px; 
+                justify-content: space-between;
+                gap: 30px;
             }
 
             .icon {
@@ -1108,14 +1108,14 @@ address {
                 }
             }
         }
-    
+
         button .accordion-title {
             font-size: 24px;
             font-weight: 400;
             line-height: 31.44px;
             color: #4C240A;
         }
-    
+
         button[aria-expanded='true'] .icon span {
             display: none;
         }
@@ -1138,8 +1138,8 @@ address {
                 padding: 0 30px 30px 30px;
                 font-size: 16px;
                 font-weight: 400;
-                line-height: 20.96px;        
-                color: #4C240A;      
+                line-height: 20.96px;
+                color: #4C240A;
             }
         }
     }
@@ -1164,7 +1164,7 @@ address {
             .prev_icon_media {
                 display: none;
             }
-        
+
             .next_icon_media {
                 display: none;
             }
@@ -1475,6 +1475,54 @@ address {
 }
 // step_blocks
 
+// consultations_home
+.consultations_home {
+    padding: 120px 0 60px 0;
+
+    &_title {
+        text-align: center;
+        margin-bottom: 40px;
+
+        h6 {
+            font-family: $font-NT-Somic;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 50px;
+            margin-bottom: 20px;
+            color: #4C240A;
+        }
+
+        span {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 42px;
+            color: #9F8775;
+        }
+    }
+
+    &_in {
+        display: flex;
+        gap: 30px;
+        align-items: stretch;
+    }
+
+    &_comment {
+        width: calc(100% / 2 - 15px);
+        background: #E7DDD2;
+        padding: 30px;
+        border-radius: 30px;
+
+        p {
+            font-family: $font-NT-Somic;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 23.4px;
+            color: #4C240A;
+        }
+    }
+}
+// consultations_home
+
 // footer
 .footer {
     background: #4C240A;
@@ -1493,7 +1541,7 @@ address {
         li {
             font-size: 18px;
             font-weight: 400;
-            line-height: 23.4px;    
+            line-height: 23.4px;
             color: #F3EBE1;
         }
     }
@@ -1529,7 +1577,7 @@ address {
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 20.96px;
-                letter-spacing: 0.03em; 
+                letter-spacing: 0.03em;
                 color: #F3EBE1;
                 margin-bottom: 30px;
             }

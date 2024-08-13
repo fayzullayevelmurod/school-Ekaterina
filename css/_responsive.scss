@@ -56,14 +56,14 @@
                 padding: 20px 0;
             }
         }
-    
+
         &__descriptions {
             align-items: stretch;
-    
+
             &_left {
                 width: calc(50% - 15px);
             }
-    
+
             &_right {
                 width: 100%;
                 padding-left: 30px;
@@ -106,6 +106,14 @@
         .education_card {
             border: none;
             box-shadow: 0px 0px 30px 0px rgba(76, 36, 10, 0.5);
+        }
+    }
+
+    .consultations_home {
+        padding: 60px 0 30px 0;
+
+        &_in {
+            gap: 20px;
         }
     }
 
@@ -162,7 +170,7 @@
             transform: translateY(100%);
             flex-direction: column;
             gap: 10px;
-            
+
             li {
                 width: 100%;
 
@@ -218,26 +226,26 @@
         &__title {
             font-size: 14px;
             margin-bottom: 20px;
-            
+
             span:not(.line) {
                 padding: 15px 0 10px;
             }
         }
-    
+
         &__descriptions {
             flex-direction: column;
             gap: 15px;
-    
+
             &_left {
                 width: 100%;
                 padding: 20px;
             }
-    
+
             &_right {
                 width: 100%;
                 padding-left: 0;
             }
-    
+
             ul {
                 li {
                     font-size: 14px;
@@ -491,7 +499,7 @@
             padding: 20px 20px 35px 20px;
         }
 
-        
+
     }
 
     .teacher {
@@ -503,7 +511,7 @@
         }
 
         .teacher_img {
-            
+
             img {
                 max-width: 100%;
             }
@@ -590,7 +598,7 @@
 
     .faq {
         padding: 60px 0;
-        
+
         .accordion {
             button {
                 padding: 20px;
@@ -624,7 +632,7 @@
             }
 
         }
-    } 
+    }
 
     .reviews {
         padding: 0 0 60px 0;
@@ -871,6 +879,31 @@
             .form_input {
                 width: calc(100% / 2 - 5px);
             }
+        }
+    }
+
+    .consultations_home {
+
+        &_title {
+            h6 {
+                font-size: 24px;
+                line-height: 26px;
+                margin-bottom: 10px;
+            }
+
+            span {
+                line-height: 24px;
+            }
+        }
+
+        &_in {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &_comment {
+            width: 100%;
+            padding: 20px;
         }
     }
 }
