@@ -88,3 +88,20 @@ tabHead.forEach((btn, btnID) => {
         })
     }
 })
+
+let reviewSwp = new Swiper('.review .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 100,
+    initialSlide: 1,
+    loop: true,
+    breakpoints: {
+        900: {
+            slidesPerView: 'auto',
+            spaceBetween: 73,
+        }
+    },
+    navigation: {
+        nextEl: '.review__swp_btn__next',
+        prevEl: '.review__swp_btn__prev',
+    }
+})

@@ -1613,5 +1613,168 @@ address {
 }
 // footer
 
+// Review
+.review {
+    margin-bottom: 120px;
+
+    &_container {
+        max-width: 730px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 50px;
+        line-height: 100%;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 60px;
+    }
+
+    &__swp {
+        position: relative;
+
+        &_btn {
+
+            button {
+                width: 25px;
+                height: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 85.5px;
+            }
+
+            &__prev {
+                position: absolute;
+                z-index: 2;
+                left: -47px;
+            }
+
+            &__next {
+                position: absolute;
+                z-index: 2;
+                right: -47px;
+            }
+        }
+    }
+
+    .swiper {
+        overflow: visible;
+        width: 100%;
+
+        &-slide {
+            box-shadow: 0 0 30px rgba(76, 36, 10, 0.502);
+            border-radius: 30px;
+            padding: 30px;
+            user-select: none;
+            
+            h3 {
+                font-size: 24px;
+                line-height: 120%;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            
+            h4 {
+                color: #9F8775;
+                font-size: 16px;
+                line-height: 120%;
+                font-weight: normal;
+                margin-bottom: 30px;
+            }
+            
+            p {
+                font-size: 16px;
+                line-height: 120%;
+                font-weight: 400;
+            }
+            
+            &:not(.swiper-slide-active) {
+                width: 323px;
+            }
+            
+            &.swiper-slide-active {
+                width: 730px;
+            }
+        }
+    }
+}
+// Review end
+
+// Your review
+.your-review {
+    padding-bottom: 60px;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        max-width: 1410px;
+        padding: 0;
+
+        &_left {
+            background: #E7DDD2;
+            border-radius: 30px 0 0 30px;
+            padding: 40px 40px 75px;
+            width: 100%;
+
+            h2 {
+                font-size: 50px;
+                line-height: 100%;
+                max-width: 432px;
+                margin-bottom: 30px;
+                font-weight: normal;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 130%;
+                max-width: 432px;
+            }
+        }
+    }
+
+    &__form {
+        width: 690px;
+        flex-shrink: 0;
+        border: 1px solid #4C240A;
+        border-radius: 30px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        input {
+            width: 100%;
+        }
+        
+        button {
+            width: 100%;
+            border: 1px solid #4C240A;
+            border-radius: 30px;
+            height: 43px;
+            font-size: 18px;
+            line-height: 120%;
+        }
+
+        &_item {
+            border: 1px solid #9F8775;
+            border-radius: 20px;
+            padding: 20px;
+
+            h3 {
+                font-size: 18px;
+                line-height: 130%;
+                font-weight: normal;
+                margin-bottom: 15px;
+            }
+
+            .form_group {
+                display: flex;
+                gap: 10px;
+            }
+        }
+    }
+}
+// Your review end
 
 @import './responsive';

@@ -8,6 +8,14 @@
     }
 }
 
+@media only screen and (max-width: 1440px) {
+    .your-review {
+        &__content {
+            max-width: 1110px;
+        }
+    }
+}
+
 @media only screen and (max-width: 1230px) {
 
     .main_container {
@@ -24,6 +32,22 @@
         }
     }
 
+}
+
+@media only screen and (max-width: 1200px) {
+    .your-review {
+        &__form {
+            width: 425px;
+
+            .form_group {
+                flex-wrap: wrap;
+
+                input {
+                    width: calc(50% - 5px);
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -112,6 +136,12 @@
     .consultations_home {
         padding: 60px 0 30px 0;
 
+        &_title {
+            h6 {
+                font-weight: 500;
+            }
+        }
+
         &_in {
             gap: 20px;
         }
@@ -143,6 +173,39 @@
         }
     }
 
+    .review {
+        margin-bottom: 60px;
+
+        &_container {
+            width: 574px;
+        }
+
+        &__title {
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+
+        .swiper {
+            &-slide {
+                &.swiper-slide-active {
+                    width: 574px;
+                }
+            }
+        }
+    }
+
+    .your-review {
+        padding-bottom: 0;
+
+        &__content_left {
+            padding: 40px;
+
+            h2 {
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 950px) {
@@ -442,6 +505,82 @@
         &__link {
             height: 57px;
             font-size: 24px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .review {
+        &_container {
+            max-width: calc(100% - 130px);
+        }
+        
+        &__title {
+            font-size: 24px;
+            line-height: 26px;
+            margin-bottom: 40px;
+        }
+
+        &__swp {
+            button {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &__prev {
+                left: -35px;
+            }
+
+            &__next {
+                right: -35px;
+            }
+        }
+
+        .swiper {
+            &-slide {
+                padding: 20px;
+
+                h3 {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+                h4 {
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .your-review {
+        &__content {
+            flex-direction: column;
+            gap: 10px;
+
+            &_left {
+                border-radius: 30px;
+                padding: 20px;
+
+                h2 {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &__form {
+            width: 100%;
+            padding: 20px;
+            gap: 10px;
+            
+            .form_input {
+                height: 53px;
+            }
         }
     }
 }
