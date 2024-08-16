@@ -1641,7 +1641,8 @@ address {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                top: 85.5px;
+                top: 50%;
+                transform: translateY(-50%);
             }
 
             &__prev {
@@ -1687,14 +1688,6 @@ address {
                 font-size: 16px;
                 line-height: 120%;
                 font-weight: 400;
-            }
-            
-            &:not(.swiper-slide-active) {
-                width: 323px;
-            }
-            
-            &.swiper-slide-active {
-                width: 730px;
             }
         }
     }

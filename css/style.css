@@ -1348,7 +1348,8 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 85.5px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .review__swp_btn__prev {
   position: absolute;
@@ -1389,12 +1390,6 @@ address {
   font-size: 16px;
   line-height: 120%;
   font-weight: 400;
-}
-.review .swiper-slide:not(.swiper-slide-active) {
-  width: 323px;
-}
-.review .swiper-slide.swiper-slide-active {
-  width: 730px;
 }
 
 .your-review {

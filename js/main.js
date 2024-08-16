@@ -94,14 +94,15 @@ let reviewSwp = new Swiper('.review .swiper', {
     spaceBetween: 100,
     initialSlide: 1,
     loop: true,
+    speed: 300,
     breakpoints: {
-        900: {
-            slidesPerView: 'auto',
+        992: {
+            slidesPerView: 2,
             spaceBetween: 73,
         }
     },
     navigation: {
         nextEl: '.review__swp_btn__next',
         prevEl: '.review__swp_btn__prev',
-    }
+    },
 })
